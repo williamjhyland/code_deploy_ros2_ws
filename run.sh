@@ -7,6 +7,17 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
+# Hardcoded Section for Demonstration Purposes
+echo "create viam_ros2_ws"
+# Specific to env
+mkdir -p /home/parallels/viam_ros2_ws/
+echo $(ls)
+cp -r "${SCRIPT_DIR}"/src/ /home/parallels/viam_ros2_ws/
+cd /home/parallels/viam_ros2_ws/
+
+# Build workspace
+colcon build
+
 if [[ ! -f ${SCRIPT_DIR}/venv/bin/python ]]; then
   echo "Setting up virtual environment & installing requirements"
   python3 -m venv ${SCRIPT_DIR}/venv

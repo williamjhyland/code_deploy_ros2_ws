@@ -26,7 +26,7 @@ class CodeMgmtSensor(Sensor, Reconfigurable):
     Simple sensor which will deploy and manage applications based on attributes
     found in the configuration.
     """
-    MODEL: ClassVar[Model] = Model(ModelFamily('shawns-modules', 'code-mgmt'), 'sensor')
+    MODEL: ClassVar[Model] = Model(ModelFamily('viam-soleng', 'code-mgmt'),'ros2-ws')
 
     @classmethod
     def new(cls, config: ComponentConfig, dependencies: Mapping[ResourceName, ResourceBase]) -> Self:
