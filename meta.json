@@ -1,0 +1,13 @@
+{
+  "module_id": "viam-soleng:viam-ros2-code-deploy-ws",
+  "visibility": "public",
+  "url": "https://github.com/williamjhyland/code_deploy_ros2_ws",
+  "description": "This demonstration is to show how versioning could work in a ROS2 workspace. This allows remote changes to a workspace on a turtle bot 4.",
+  "models": [
+    {
+      "api": "rdk:component:sensor", 
+      "model": "viam-soleng:code-mgmt:ros2-ws"
+    }
+  ],
+  "entrypoint": "run.sh"
+}
