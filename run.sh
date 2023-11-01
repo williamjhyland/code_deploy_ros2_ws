@@ -10,10 +10,10 @@ SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 # Hardcoded Section for Demonstration Purposes
 echo "create viam_ros2_ws"
 # Specific to env
-mkdir -p /home/parallels/viam_ros2_ws/
+mkdir -p /home/ubuntu/viam_ros2_ws/
 echo $(ls)
-cp -r "${SCRIPT_DIR}"/src/ /home/parallels/viam_ros2_ws/
-cd /home/parallels/viam_ros2_ws/
+cp -r "${SCRIPT_DIR}"/src/ /home/ubuntu/viam_ros2_ws/
+cd /home/ubuntu/viam_ros2_ws/
 
 # Build workspace
 colcon build
